@@ -1,0 +1,1 @@
+# smart-home-next-js

@@ -38,11 +38,11 @@ const Header: React.FC = () => {
           id="open-menu"
           className="inline-flex items-center rounded-lg border border-blue-700 p-1.5 text-center text-sm font-medium text-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:ring-blue-300 focus:outline-none md:hidden dark:border-blue-500 dark:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
           onClick={toggleMenu}
-          aria-expanded="false"
+          aria-expanded={isMenuOpen}
           aria-controls="menu"
         >
           <svg
-            class="h-[28px] w-[28px] text-gray-800 dark:text-white"
+            className="h-[28px] w-[28px] text-gray-800 dark:text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -80,11 +80,11 @@ const Header: React.FC = () => {
                 id="close-menu"
                 className="inline-flex items-center rounded-lg border border-blue-700 p-1.5 text-center text-sm font-medium text-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:ring-blue-300 focus:outline-none md:hidden dark:border-blue-500 dark:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
                 onClick={toggleMenu}
-                aria-expanded="true"
+                aria-expanded={isMenuOpen}
                 aria-controls="menu"
               >
                 <svg
-                  class="h-[28px] w-[28px] text-gray-800 dark:text-white"
+                  className="h-[28px] w-[28px] text-gray-800 dark:text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

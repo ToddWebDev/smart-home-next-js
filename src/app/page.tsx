@@ -9,10 +9,8 @@ export default function Home() {
       <div className="mx-auto max-w-screen-xl px-5">
         <main className="text-center">
           <div className="mt-12 mb-8 flex flex-col">
-            <h1 className="text-4xl leading-none font-extrabold tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-              Smart Home Services
-            </h1>
-            <h2 className="order-first mb-4 text-lg font-bold text-gray-500 uppercase md:text-xl">
+            <h1>Smart Home Services</h1>
+            <h2 className="order-first mb-4 text-lg text-gray-500 uppercase md:text-xl">
               South Jordan
             </h2>
           </div>

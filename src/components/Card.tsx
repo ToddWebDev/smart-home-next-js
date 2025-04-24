@@ -1,3 +1,13 @@
+import React from "react";
+
+type CardProps = {
+  title: string;
+  titleAs?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+  description: string;
+  linkLabel: string;
+  linkHref: string;
+};
+
 const Card: React.FC<CardProps> = ({
   title,
   titleAs = "h3",

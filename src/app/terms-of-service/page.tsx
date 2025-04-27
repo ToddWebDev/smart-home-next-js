@@ -8,7 +8,7 @@ const TermsOfService: React.FC = () => {
       <section className="mt-6 mb-8">
         <h2 className="mb-4 text-2xl font-semibold">Introduction</h2>
         <p>
-          These Terms of Service (&quot;;Terms&quot;) govern your use of the
+          These Terms of Service (&quot;Terms&quot;) govern your use of the
           South Jordan Smart Home Services website and the services we offer. By
           accessing our website or using our services, you agree to comply with
           these Terms.

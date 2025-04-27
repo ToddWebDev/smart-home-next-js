@@ -44,8 +44,15 @@ export default function ContactPage() {
         <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
           Request a Quote
         </h2>
-        <form className="max-w-xl space-y-6">
+        <form
+          className="max-w-xl space-y-6"
+          name="contact"
+          method="POST"
+          action="/success"
+          data-netlify="true"
+        >
           <div>
+            <input type="hidden" name="contact-form" value="contact" />
             <label
               htmlFor="fullName"
               className="mb-2 block text-sm font-medium"

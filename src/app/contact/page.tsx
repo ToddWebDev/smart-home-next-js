@@ -18,7 +18,7 @@ export default function ContactPage() {
         body: formParams.toString(),
       });
 
-      if (response.ok) {
+      if (response.status === 200) {
         window.location.href = "/success";
       } else {
         alert("There was an issue submitting the form. Please try again.");

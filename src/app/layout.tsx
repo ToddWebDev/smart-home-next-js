@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "South Jordan Smart Home",
+  title: "South Jordan Smart Home Services",
   description:
     "South Jordan Smart Home Services offers expert TV mounting and smart home automation, including smart lighting, thermostats, and doorbell cameras. Serving South Jordan and Daybreak with professional installation and seamless integration for Alexa, Google, and Apple HomeKit.",
 };
@@ -39,7 +42,11 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        <main className="mx-auto max-w-screen-xl px-5">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

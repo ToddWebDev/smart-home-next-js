@@ -1,12 +1,21 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
+
+  const isActive = (path: string) =>
+    pathname === path
+      ? "text-gray-950 dark:text-gray-100"
+      : "text-gray-500 dark:text-gray-400";
+
   return (
     <header className="border-gray-200 bg-white md:border-b dark:border-gray-700 dark:bg-gray-900">
       <div className="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-4">
@@ -105,17 +114,14 @@ const Header: React.FC = () => {
               </button>
             </li>
             <li>
-              <Link
-                href="/services"
-                className="text-gray-600 hover:underline dark:text-gray-300"
-              >
+              <Link href="/" className={`hover:underline ${isActive("/")}`}>
                 Services
               </Link>
             </li>
             <li>
               <Link
                 href="/about"
-                className="text-gray-600 hover:underline dark:text-gray-300"
+                className={`hover:underline ${isActive("/about")}`}
               >
                 About
               </Link>
@@ -123,7 +129,7 @@ const Header: React.FC = () => {
             <li>
               <Link
                 href="/contact"
-                className="text-gray-600 hover:underline dark:text-gray-300"
+                className={`hover:underline ${isActive("/contact")}`}
               >
                 Contact
               </Link>

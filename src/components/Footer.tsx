@@ -10,20 +10,20 @@ const Footer: React.FC = () => {
         </span>
         <div className="mt-4 flex space-x-6 md:mt-0 md:justify-end">
           <a
-            href="#"
-            className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            href="/privacy-policy"
+            className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
           >
             Privacy Policy
           </a>
           <a
-            href="#"
-            className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            href="/terms-of-service"
+            className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
           >
             Terms of Service
           </a>
           <a
-            href="#"
-            className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            href="/contact"
+            className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
           >
             Contact
           </a>

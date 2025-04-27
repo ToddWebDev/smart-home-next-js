@@ -32,18 +32,24 @@ export default function Home() {
           description="Replace standard wall switches with smart on/off switches to control your lights from your phone or voice assistant. A great first step toward a smarter home."
           linkLabel="Get Quote"
           linkHref="/contact"
+          imageSrc="/images/smart-light.jpg"
+          imageAlt="Smart light wall switches"
         />
         <Card
           title="Smart Dimmer Light Installation"
           description="Add flexible, mood-setting lighting with smart dimmer switches. Control brightness levels by app, schedule, or voice—perfect for living rooms, bedrooms, or dining spaces."
           linkLabel="Get Quote"
           linkHref="/contact"
+          imageSrc="/images/dim-lighting.jpg"
+          imageAlt="Bedroom with dim lighting"
         />
         <Card
           title="Home Automation Setup"
           description="Bring your smart devices together under one hub for seamless control. Whether you're using Alexa, Google Home, or Apple HomeKit, we’ll help you automate your lights, thermostat, cameras, and more—all from one app or voice command."
           linkLabel="Get Quote"
           linkHref="/contact"
+          imageSrc="/images/apple-homekit.jpg"
+          imageAlt="Smart light wall switches"
         />
       </section>
     </div>

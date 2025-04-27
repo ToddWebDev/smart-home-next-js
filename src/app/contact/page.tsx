@@ -1,12 +1,34 @@
+"use client";
 import React from "react";
 
-export const metadata = {
-  title: "Contact Us | South Jordan Smart Home Services",
-  description:
-    "Request a quote or ask a question. Serving South Jordan, Daybreak, and nearby Utah communities.",
-};
-
 export default function ContactPage() {
+  const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const formData = new FormData(event.target as HTMLFormElement);
+
+    const formParams = new URLSearchParams();
+    formData.forEach((value, key) => {
+      formParams.append(key, value.toString());
+    });
+
+    try {
+      const response = await fetch("/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: formParams.toString(),
+      });
+
+      if (response.ok) {
+        window.location.href = "/success";
+      } else {
+        alert("There was an issue submitting the form. Please try again.");
+      }
+    } catch (error) {
+      alert("There was an issue submitting the form. Please try again.");
+      console.error(error);
+    }
+  };
+
   return (
     <main className="container mx-auto max-w-4xl px-4 py-12">
       <header className="mb-8">
@@ -47,9 +69,8 @@ export default function ContactPage() {
         <form
           className="max-w-xl space-y-6"
           name="contact"
-          method="POST"
           action="/success"
-          data-netlify="true"
+          onSubmit={handleFormSubmit}
         >
           <div>
             <input type="hidden" name="contact-form" value="contact" />
@@ -95,7 +116,7 @@ export default function ContactPage() {
 
           <div>
             <label htmlFor="zip" className="mb-2 block text-sm font-medium">
-              Address (Optional)
+              Zip Code (Optional)
             </label>
             <input
               type="text"

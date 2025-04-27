@@ -1,11 +1,12 @@
 import Card from "@/components/Card";
+import HorizontalCard from "@/components/HorizontalCard";
 
 export default function Home() {
   return (
     <div className="text-center">
       <div className="mt-12 mb-8 flex flex-col">
         <h1>Smart Home Services</h1>
-        <h2 className="!md:text-xl order-first mb-4 !text-lg !text-gray-500 uppercase dark:!text-gray-400">
+        <h2 className="!md:text-xl order-first mb-4 !text-lg !font-normal !text-gray-500 uppercase dark:!text-gray-400">
           South Jordan
         </h2>
       </div>
@@ -16,13 +17,14 @@ export default function Home() {
       </p>
       <section className="grid grid-cols-1 justify-stretch gap-5"></section>
       <section className="grid grid-cols-1 justify-stretch gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        <div className="md:col-span-2 lg:col-span-3">
-          <Card
+        <div className="sm:col-span-2 lg:col-span-3">
+          <HorizontalCard
             title="TV Wall Mounting"
-            titleAs="h2"
             description="Clean and secure TV wall mounting for any room. We handle all sizes and wall types—just choose your spot and we’ll take care of the rest. Add-on options available for in-wall cable concealment and soundbar installation."
             linkLabel="Get Quote"
             linkHref="/contact"
+            imageSrc="/images/tv-mount.jpg"
+            imageAlt="Wall mounted TV with brackets"
           />
         </div>
         <Card

@@ -61,8 +61,8 @@ const Header: React.FC = () => {
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeWidth="2"
               d="M5 7h14M5 12h14M5 17h14"
             />
           </svg>
@@ -103,9 +103,9 @@ const Header: React.FC = () => {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M6 18 17.94 6M18 18 6.06 6"
                   />
                 </svg>

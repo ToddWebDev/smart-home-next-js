@@ -3,9 +3,9 @@ import React from "react";
 const PrivacyPolicy: React.FC = () => {
   return (
     <main className="mx-auto max-w-3xl px-4 py-6">
-      <h1 className="mb-6">Privacy Policy</h1>
+      <h1>Privacy Policy</h1>
 
-      <section className="mb-8">
+      <section className="mt-6 mb-8">
         <h2 className="mb-4 text-2xl font-semibold">Introduction</h2>
         <p>
           This Privacy Policy explains how South Jordan Smart Home Services

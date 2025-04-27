@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <section className="mx-auto max-w-4xl px-4 py-12">
-      <h1 className="mb-6">About South Jordan Smart Home Services</h1>
+      <h1 className="mb-6">About Us</h1>
 
       <p className="mb-6 text-lg text-gray-700 dark:text-gray-300">
         At South Jordan Smart Home Services, we specialize in helping families

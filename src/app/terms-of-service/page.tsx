@@ -3,12 +3,12 @@ import React from "react";
 const TermsOfService: React.FC = () => {
   return (
     <main className="mx-auto max-w-3xl px-4 py-6">
-      <h1 className="mb-6">Terms of Service</h1>
+      <h1>Terms of Service</h1>
 
-      <section className="mb-8">
+      <section className="mt-6 mb-8">
         <h2 className="mb-4 text-2xl font-semibold">Introduction</h2>
         <p>
-          These Terms of Service (&ldbquo;Terms&rdbquo;) govern your use of the
+          These Terms of Service (&quot;;Terms&quot;) govern your use of the
           South Jordan Smart Home Services website and the services we offer. By
           accessing our website or using our services, you agree to comply with
           these Terms.

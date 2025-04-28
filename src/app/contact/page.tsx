@@ -69,11 +69,10 @@ export default function ContactPage() {
         <form
           className="max-w-xl space-y-6"
           name="contact"
-          action="/success"
           onSubmit={handleFormSubmit}
         >
           <div>
-            <input type="hidden" name="contact-form" value="contact" />
+            <input type="hidden" name="form-name" value="contact" />
             <label
               htmlFor="fullName"
               className="mb-2 block text-sm font-medium"

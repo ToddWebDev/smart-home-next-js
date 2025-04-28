@@ -1,15 +1,27 @@
-<html>
-  <head></head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Setup</title>
+  </head>
   <body>
-    <form name="contact" data-netlify="true" hidden>
-      <input type="hidden" name="contact-form" value="contact" />
+    <form name="contact" method="POST" data-netlify="true" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+
       <input name="fullName" type="text" />
       <input name="email" type="email" />
       <input name="phone" type="tel" />
       <input name="zip" type="text" />
-      <select name="service" />
-      <select name="contactMethod" />
-      <textarea name="" details />
+
+      <select name="service">
+        <option value="">Service</option>
+      </select>
+
+      <select name="contactMethod">
+        <option value="">Preferred Contact Method</option>
+      </select>
+
+      <textarea name="details"></textarea>
     </form>
   </body>
 </html>

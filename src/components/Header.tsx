@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import LogoIcon from "@/components/LogoIcon";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,23 +24,7 @@ const Header: React.FC = () => {
           href="/"
           className="flex items-center justify-center gap-x-2 text-xl font-semibold text-gray-900 dark:text-white"
         >
-          <svg
-            className="h-[30px] w-[30px] text-gray-800 dark:text-white"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5"
-            />
-          </svg>
+          <LogoIcon />
           SJ Smart Home
         </Link>
         <button

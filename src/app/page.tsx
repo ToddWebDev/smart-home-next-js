@@ -1,14 +1,20 @@
 import Card from "@/components/Card";
+import LogoIcon from "@/components/LogoIcon";
 import HorizontalCard from "@/components/HorizontalCard";
 
 export default function Home() {
   return (
     <div className="text-center">
-      <div className="mt-12 mb-8 flex flex-col">
-        <h1>Smart Home Services</h1>
-        <h2 className="!md:text-xl order-first mb-4 !text-lg !font-normal !text-gray-500 uppercase dark:!text-gray-400">
-          South Jordan
-        </h2>
+      <div className="mt-12 mb-8 flex flex-col items-center justify-center gap-y-4 md:flex-row md:items-center md:gap-x-6">
+        <LogoIcon className="h-18 w-18 shrink-0 text-blue-700 md:h-24 md:w-24 dark:text-white" />
+        <div className="flex flex-col gap-y-1">
+          <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
+            Smart Home Services
+          </h1>
+          <h2 className="!dark:text-gray-400 !order-first !text-xl !font-medium !tracking-wide !text-gray-500 uppercase">
+            South Jordan
+          </h2>
+        </div>
       </div>
       <p className="mb-12 text-lg font-normal text-gray-500 sm:px-16 lg:px-48 lg:text-xl dark:text-gray-400">
         Friendly neighborhood TV wall mounting and smart home automation in
@@ -20,7 +26,7 @@ export default function Home() {
         <div className="sm:col-span-2 lg:col-span-3">
           <HorizontalCard
             title="TV Wall Mounting"
-            description="Clean and secure TV wall mounting for any room. We handle all sizes and wall types—just choose your spot and we’ll take care of the rest. Add-on options available for in-wall cable concealment and soundbar installation."
+            description="Clean and secure TV wall mounting for any room. We handle all sizes and wall types—just choose your spot and we’ll take care of the rest. Add-on options available for cable concealment and soundbar installation."
             linkLabel="Get Quote"
             linkHref="/contact"
             imageSrc="/images/tv-mount.jpg"

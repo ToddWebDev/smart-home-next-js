@@ -50,10 +50,22 @@ export default function ContactPage() {
         </h2>
         <ul className="space-y-2 text-gray-700 dark:text-gray-300">
           <li>
-            <strong>Phone:</strong> (Coming Soon)
+            <strong>Phone:</strong>{" "}
+            <a
+              href="tel:+18016138676"
+              className="text-blue-600 hover:underline"
+            >
+              (801) 613-8676
+            </a>
           </li>
           <li>
-            <strong>Email:</strong> southjordansmarthome@gmail.com
+            <strong>Email:</strong>{" "}
+            <a
+              href="mailto:info@southjordansmarthome.com"
+              className="text-blue-600 hover:underline"
+            >
+              info@southjordansmarthome.com
+            </a>
           </li>
           <li>
             <strong>Service Area:</strong> South Jordan, Daybreak, and nearby

@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "South Jordan Smart Home Services",
   description:
-    "South Jordan Smart Home Services offers expert TV mounting and smart home automation, including smart lighting, thermostats, and doorbell cameras. Serving South Jordan and Daybreak with professional installation and seamless integration for Alexa, Google, and Apple HomeKit.",
+    "South Jordan Smart Home Services offers neighborhood TV wall mounting and smart home automation, including smart lighting, smart dimmer, and smart cameras. Serving South Jordan and Daybreak in Utah with friendly installation and seamless integration for Alexa, Google, and Apple HomeKit.",
 };
 
 export default function RootLayout({

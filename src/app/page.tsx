@@ -9,16 +9,16 @@ export default function Home() {
         <LogoIcon className="h-18 w-18 shrink-0 text-blue-700 md:h-24 md:w-24 dark:text-white" />
         <div className="flex flex-col gap-y-1">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-            Smart Home Services
+            Smart Home
           </h1>
           <h2 className="!dark:text-gray-400 !order-first !text-xl !font-medium !tracking-wide !text-gray-500 uppercase">
             South Jordan
           </h2>
         </div>
       </div>
-      <p className="mb-12 text-lg font-normal text-gray-500 sm:px-16 lg:px-48 lg:text-xl dark:text-gray-400">
-        Friendly neighborhood TV wall mounting and smart home automation in
-        South Jordan— installation for smart lighting, and more.
+      <p className="mb-12 text-lg font-normal text-gray-500 sm:px-16 lg:px-32 lg:text-xl dark:text-gray-400">
+        Providing friendly neighborhood TV wall mounting and smart home services
+        in South Jordan, Utah.
       </p>
       <section className="grid grid-cols-1 justify-stretch gap-5"></section>
       <section className="grid grid-cols-1 justify-stretch gap-5 sm:grid-cols-2 lg:grid-cols-3">

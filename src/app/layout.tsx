@@ -11,9 +11,9 @@ const GA_ID = "G-CMMYTVP534";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "South Jordan Smart Home Services",
+  title: "South Jordan Smart Home",
   description:
-    "South Jordan Smart Home Services offers neighborhood TV wall mounting and smart home automation, including smart lighting, smart dimmer, and smart cameras. Serving South Jordan and Daybreak in Utah with friendly installation and seamless integration for Alexa, Google, and Apple HomeKit.",
+    "South Jordan Smart Home offers neighborhood TV wall mounting and smart home automation services, including smart lighting, smart dimmer, and smart cameras. Serving South Jordan and Daybreak in Utah with friendly installation and seamless integration for Alexa, Google, and Apple HomeKit.",
 };
 
 export default function RootLayout({

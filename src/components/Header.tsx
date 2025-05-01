@@ -25,7 +25,10 @@ const Header: React.FC = () => {
           className="flex items-center justify-center gap-x-2 text-xl font-semibold text-gray-900 dark:text-white"
         >
           <LogoIcon />
-          SJ Smart Home
+          <span className="-mr-1 font-medium text-gray-500 dark:text-gray-400">
+            SJ
+          </span>
+          Smart Home
         </Link>
         <button
           type="button"

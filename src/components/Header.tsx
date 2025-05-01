@@ -18,7 +18,7 @@ const Header: React.FC = () => {
       : "text-gray-500 dark:text-gray-400";
 
   return (
-    <header className="border-gray-200 bg-white md:border-b dark:border-gray-700 dark:bg-gray-900">
+    <header className="sticky top-0 z-50 border-gray-200 bg-white md:border-b dark:border-gray-700 dark:bg-gray-900">
       <div className="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-4">
         <Link
           href="/"

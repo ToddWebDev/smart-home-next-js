@@ -18,8 +18,7 @@ export default function Home() {
       </div>
       <p className="mb-12 text-lg font-normal text-gray-500 sm:px-16 lg:px-48 lg:text-xl dark:text-gray-400">
         Friendly neighborhood TV wall mounting and smart home automation in
-        South Jordan— installation for smart lighting, thermostats, smart
-        doorbell cameras, and more.
+        South Jordan— installation for smart lighting, and more.
       </p>
       <section className="grid grid-cols-1 justify-stretch gap-5"></section>
       <section className="grid grid-cols-1 justify-stretch gap-5 sm:grid-cols-2 lg:grid-cols-3">

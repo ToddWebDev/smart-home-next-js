@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="text-center">
       <div className="mt-12 mb-8 flex flex-col items-center justify-center gap-y-4 md:flex-row md:items-center md:gap-x-6">
-        <LogoIcon className="h-18 w-18 shrink-0 text-blue-700 md:h-24 md:w-24 dark:text-white" />
+        <LogoIcon className="h-18 w-18 shrink-0 text-blue-700 md:h-24 md:w-24" />
         <div className="flex flex-col gap-y-1">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
             Smart Home

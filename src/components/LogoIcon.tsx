@@ -9,7 +9,7 @@ const LogoIcon: React.FC<React.SVGProps<SVGSVGElement>> = ({
     viewBox="0 0 7620 7620"
     role="img"
     aria-label="South Jordan Smart Home logo"
-    className={`inline-block h-8 w-8 fill-current align-middle text-blue-700 dark:text-white ${className}`}
+    className={`inline-block h-8 w-8 fill-current align-middle text-blue-700 ${className}`}
     {...props}
   >
     <g transform="scale(1, -1) translate(0, -7620)">

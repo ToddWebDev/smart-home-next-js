@@ -11,7 +11,7 @@ export default function Home() {
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
             Smart Home
           </h1>
-          <h2 className="!dark:text-gray-400 !order-first !text-xl !font-medium !tracking-wide !text-gray-500 uppercase">
+          <h2 className="!order-first !text-xl !font-medium !tracking-wide !text-gray-500 uppercase dark:!text-gray-400">
             South Jordan
           </h2>
         </div>

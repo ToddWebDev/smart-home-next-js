@@ -8,7 +8,7 @@ const PrivacyPolicy: React.FC = () => {
       <section className="mt-6 mb-8">
         <h2 className="mb-4 text-2xl font-semibold">Introduction</h2>
         <p>
-          This Privacy Policy explains how South Jordan Smart Home Services
+          This Privacy Policy explains how South Jordan Smart Home
           (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) collects, uses,
           and protects your personal information when you visit our website or
           use our services.

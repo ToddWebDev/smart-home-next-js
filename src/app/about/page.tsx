@@ -2,9 +2,9 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About | South Jordan Smart Home Services",
+  title: "About | South Jordan Smart Home",
   description:
-    "Learn about South Jordan Smart Home Services — your trusted local partner for smart home installations in South Jordan, Utah.",
+    "Learn about South Jordan Smart Home — your trusted local partner for smart home installations in South Jordan, Utah.",
 };
 export default function AboutPage() {
   return (
@@ -12,8 +12,8 @@ export default function AboutPage() {
       <h1 className="mb-6">About Us</h1>
 
       <p className="mb-6 text-lg text-gray-700 dark:text-gray-300">
-        At South Jordan Smart Home Services, we specialize in helping families
-        and homeowners create smarter, more connected living spaces.
+        At South Jordan Smart Home, we specialize in helping families and
+        homeowners create smarter, more connected living spaces.
       </p>
 
       <p className="mb-6 text-lg text-gray-700 dark:text-gray-300">

@@ -5,8 +5,8 @@ const Footer: React.FC = () => {
     <footer className="mt-24 border-t border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-900">
       <div className="mx-auto flex max-w-screen-xl flex-col items-center px-4 py-6 md:flex-row md:justify-between">
         <span className="text-sm text-gray-500 dark:text-gray-400">
-          © {new Date().getFullYear()} South Jordan Smart Home Services. All
-          rights reserved.
+          © {new Date().getFullYear()} South Jordan Smart Home. All rights
+          reserved.
         </span>
         <div className="mt-4 flex space-x-6 md:mt-0 md:justify-end">
           <a

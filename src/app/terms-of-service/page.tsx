@@ -9,7 +9,7 @@ const TermsOfService: React.FC = () => {
         <h2 className="mb-4 text-2xl font-semibold">Introduction</h2>
         <p>
           These Terms of Service (&quot;Terms&quot;) govern your use of the
-          South Jordan Smart Home Services website and the services we offer. By
+          South Jordan Smart Home website and the services we offer. By
           accessing our website or using our services, you agree to comply with
           these Terms.
         </p>
@@ -36,7 +36,7 @@ const TermsOfService: React.FC = () => {
       <section className="mb-8">
         <h2 className="mb-4 text-2xl font-semibold">Limitation of Liability</h2>
         <p>
-          South Jordan Smart Home Services is not responsible for any indirect,
+          South Jordan Smart Home is not responsible for any indirect,
           incidental, or consequential damages resulting from the use of our
           services.
         </p>

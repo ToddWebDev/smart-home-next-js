@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function SuccessPage() {
   return (
     <>
-      <h1>Request Submitted!</h1>
+      <h1>Request Submitted</h1>
       <p className="mt-6 mb-8 max-w-2xl text-lg font-normal text-gray-500 dark:text-gray-300">
         Thanks for reaching out to South Jordan Smart Home. We’ve received your
         TV Wall Mounting quote request and will get back to you within 24 hours.

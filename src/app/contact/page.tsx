@@ -77,7 +77,7 @@ export default function ContactPage() {
           Request a Quote
         </h2>
         <form
-          className="max-w-xl space-y-6"
+          className="max-w-lg space-y-6"
           name="contact"
           onSubmit={handleFormSubmit}
         >

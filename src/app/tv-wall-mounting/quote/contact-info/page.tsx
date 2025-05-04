@@ -16,11 +16,11 @@ export default function ContactInfo() {
   return (
     <>
       <h1>TV Mount Installation</h1>
-      <p className="mt-4 mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+      <p className="my-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
         Request a free estimate
       </p>
       <StepIndicator />
-      <form onSubmit={handleSubmit} className="max-w-md">
+      <form onSubmit={handleSubmit} className="max-w-lg">
         <fieldset className="my-10">
           <legend className="text-lg font-semibold text-gray-900 uppercase dark:text-gray-100">
             Contact Information
@@ -123,7 +123,7 @@ export default function ContactInfo() {
 
           <button
             type="submit"
-            className="rounded-lg bg-blue-700 px-6 py-3 font-semibold text-white hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700"
+            className="rounded-lg bg-blue-700 px-5 py-2.5 font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Next
           </button>

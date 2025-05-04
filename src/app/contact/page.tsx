@@ -30,21 +30,19 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="container mx-auto max-w-4xl px-4 py-12">
-      <header className="mb-8">
-        <h1>Contact Us</h1>
-        <p className="mt-6 text-lg text-gray-700 dark:text-gray-300">
-          Have a project in mind? We&apos;re here to help! Whether you need a TV
-          mounted, smart lights installed, or you&apos;re ready to upgrade your
-          home automation, we’re ready to get started.
-        </p>
-        <p className="mt-2 text-lg text-gray-700 dark:text-gray-300">
-          Fill out the form below to request a free quote or ask a question —
-          we’ll get back to you within 24 hours.
-        </p>
-      </header>
+    <>
+      <h1>Contact Us</h1>
+      <p className="mt-6 text-lg text-gray-700 dark:text-gray-300">
+        Have a project in mind? We&apos;re here to help! Whether you need a TV
+        mounted, smart lights installed, or you&apos;re ready to upgrade your
+        home automation, we’re ready to get started.
+      </p>
+      <p className="mt-2 text-lg text-gray-700 dark:text-gray-300">
+        Fill out the form below to request a free quote or ask a question —
+        we’ll get back to you within 24 hours.
+      </p>
 
-      <section className="mb-12">
+      <section className="my-12">
         <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
           Contact Information
         </h2>
@@ -216,6 +214,6 @@ export default function ContactPage() {
           We look forward to helping you create a smarter, more connected home!
         </p>
       </section>
-    </main>
+    </>
   );
 }

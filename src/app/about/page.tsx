@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 export default function AboutPage() {
   return (
-    <section className="mx-auto max-w-4xl px-4 py-12">
+    <>
       <h1 className="mb-6">About Us</h1>
 
       <p className="mb-6 text-lg text-gray-700 dark:text-gray-300">
@@ -68,6 +68,6 @@ export default function AboutPage() {
           Request a free quote →
         </Link>
       </div>
-    </section>
+    </>
   );
 }

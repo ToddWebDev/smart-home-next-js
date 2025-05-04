@@ -5,23 +5,49 @@
     <title>Form Setup</title>
   </head>
   <body>
+    <!-- Contact Form -->
     <form name="contact" method="POST" data-netlify="true" hidden>
       <input type="hidden" name="form-name" value="contact" />
+      <input name="fullName" type="text" />
+      <input name="email" type="email" />
+      <input name="phone" type="tel" />
+      <input name="zip" type="text" />
+      <select name="service">
+        <option value="">Service</option>
+      </select>
+      <select name="contactMethod">
+        <option value="">Preferred Contact Method</option>
+      </select>
+      <textarea name="details"></textarea>
+    </form>
 
+    <!-- TV Wall Mounting Quote Form -->
+    <form name="quote" method="POST" data-netlify="true" hidden>
+      <input type="hidden" name="form-name" value="quote" />
       <input name="fullName" type="text" />
       <input name="email" type="email" />
       <input name="phone" type="tel" />
       <input name="zip" type="text" />
 
-      <select name="service">
-        <option value="">Service</option>
+      <select name="contactPreference">
+        <option value="">Preferred Contact</option>
       </select>
-
-      <select name="contactMethod">
-        <option value="">Preferred Contact Method</option>
+      <select name="tvSize">
+        <option value="">TV Size</option>
       </select>
-
-      <textarea name="details"></textarea>
+      <input name="tvExactSize" type="text" />
+      <select name="wallType">
+        <option value="">Wall Type</option>
+      </select>
+      <select name="needMount">
+        <option value="">Mount Type</option>
+      </select>
+      <select name="liftHelp">
+        <option value="">Lift Help</option>
+      </select>
+      <input type="checkbox" name="inWallCordMasking" />
+      <input type="checkbox" name="externalCustomerCordMasking" />
+      <input type="checkbox" name="externalTechCordMasking" />
     </form>
   </body>
 </html>

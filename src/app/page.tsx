@@ -5,7 +5,7 @@ import HorizontalCard from "@/components/HorizontalCard";
 export default function Home() {
   return (
     <div className="text-center">
-      <div className="mt-12 mb-8 flex flex-col items-center justify-center gap-y-4 md:flex-row md:items-center md:gap-x-6">
+      <header className="mb-8 flex flex-col items-center justify-center gap-y-4 md:flex-row md:items-center md:gap-x-6">
         <LogoIcon className="h-18 w-18 shrink-0 text-blue-700 md:h-24 md:w-24" />
         <div className="flex flex-col gap-y-1">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
@@ -15,8 +15,8 @@ export default function Home() {
             South Jordan
           </h2>
         </div>
-      </div>
-      <p className="mb-12 text-lg font-normal text-gray-500 sm:px-16 lg:px-32 lg:text-xl dark:text-gray-400">
+      </header>
+      <p className="mb-12 text-lg font-normal text-gray-500 sm:px-16 lg:text-xl dark:text-gray-400">
         Providing friendly neighborhood TV wall mounting and smart home services
         in South Jordan, Utah.
       </p>
@@ -26,8 +26,8 @@ export default function Home() {
           <HorizontalCard
             title="TV Wall Mounting"
             description="Clean and secure TV wall mounting for any room. We handle all sizes and wall types—just choose your spot and we’ll take care of the rest. Add-on options available for cable concealment and soundbar installation."
-            linkLabel="Get Quote"
-            linkHref="/contact"
+            linkLabel="Get Estimate"
+            linkHref="/tv-wall-mounting/quote/"
             imageSrc="/images/tv-mount.jpg"
             imageAlt="Wall mounted TV with brackets"
           />
@@ -35,7 +35,7 @@ export default function Home() {
         <Card
           title="Smart Light Switch Installation"
           description="Replace standard wall switches with smart on/off switches to control your lights from your phone or voice assistant. A great first step toward a smarter home."
-          linkLabel="Get Quote"
+          linkLabel="Get Estimate"
           linkHref="/contact"
           imageSrc="/images/smart-light.jpg"
           imageAlt="Smart light wall switches"
@@ -43,7 +43,7 @@ export default function Home() {
         <Card
           title="Smart Dimmer Light Installation"
           description="Add flexible, mood-setting lighting with smart dimmer switches. Control brightness levels by app, schedule, or voice—perfect for living rooms, bedrooms, or dining spaces."
-          linkLabel="Get Quote"
+          linkLabel="Get Estimate"
           linkHref="/contact"
           imageSrc="/images/dim-lighting.jpg"
           imageAlt="Bedroom with dim lighting"
@@ -51,7 +51,7 @@ export default function Home() {
         <Card
           title="Home Automation Setup"
           description="Bring your smart devices together under one hub for seamless control. Whether you're using Alexa, Google Home, or Apple HomeKit, we’ll help you automate your lights, thermostat, cameras, and more—all from one app or voice command."
-          linkLabel="Get Quote"
+          linkLabel="Get Estimate"
           linkHref="/contact"
           imageSrc="/images/apple-homekit.jpg"
           imageAlt="Smart light wall switches"

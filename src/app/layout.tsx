@@ -67,7 +67,9 @@ export default function RootLayout({
           }}
         />
         <Header />
-        <main className="mx-auto max-w-screen-xl px-5">{children}</main>
+        <main className="mx-auto max-w-screen-xl px-5 pt-6 md:pt-12">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

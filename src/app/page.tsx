@@ -49,7 +49,7 @@ export default function Home() {
           imageAlt="Bedroom with dim lighting"
         />
         <Card
-          title="Home Automation Setup"
+          title="Smart Home Automation Setup"
           description="Bring your smart devices together under one hub for seamless control. Whether you're using Alexa, Google Home, or Apple HomeKit, we’ll help you automate your lights, thermostat, cameras, and more—all from one app or voice command."
           linkLabel="Get Estimate"
           linkHref="/contact"

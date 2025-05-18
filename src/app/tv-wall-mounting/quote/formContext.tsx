@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useState } from "react";
 
-type QuoteFormData = {
+export type QuoteFormData = {
   fullName?: string;
   email?: string;
   phone?: string;

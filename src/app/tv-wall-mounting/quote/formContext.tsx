@@ -13,7 +13,7 @@ export type QuoteFormData = {
   wallType?: string;
   needMount?: string;
   liftHelp?: string;
-  addOn?: "" | "inWall" | "externalMasking | string";
+  addOn?: "" | "inWall" | "externalMasking" | string;
 };
 
 const FormContext = createContext<{
@@ -31,7 +31,9 @@ export const QuoteFormProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [data, setData] = useState<QuoteFormData>({});
+  const [data, setData] = useState<QuoteFormData>({
+    addOn: "", // preselect “None”
+  });
 
   const update = (updates: Partial<QuoteFormData>) => {
     setData((prev) => ({ ...prev, ...updates }));

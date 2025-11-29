@@ -196,47 +196,44 @@ export default function ContactInfo() {
 
           <fieldset className="my-4">
             <legend className="text-lg font-semibold text-gray-900 uppercase dark:text-gray-100">
-              Add Ons
+              Cord Concealment
             </legend>
+
             <div className="my-6 space-y-6">
               <label className="flex items-center gap-x-2 text-base text-gray-900 dark:text-gray-100">
                 <input
-                  type="checkbox"
-                  name="inWallCordMasking"
-                  checked={!!data.inWallCordMasking}
-                  onChange={(e) =>
-                    update({ inWallCordMasking: e.target.checked })
-                  }
-                  className="min-h-4 min-w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600"
+                  type="radio"
+                  name="addOn"
+                  value=""
+                  checked={data.addOn === ""}
+                  onChange={(e) => update({ addOn: e.target.value })}
+                  className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:focus:ring-blue-600"
                 />
-                In-wall cord concealment (My wall is already pre-looped for wire
-                concealment)
+                None
               </label>
 
               <label className="flex items-center gap-x-2 text-base text-gray-900 dark:text-gray-100">
                 <input
-                  type="checkbox"
-                  name="externalCustomerCordMasking"
-                  checked={!!data.externalCustomerCordMasking}
-                  onChange={(e) =>
-                    update({ externalCustomerCordMasking: e.target.checked })
-                  }
-                  className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600"
+                  type="radio"
+                  name="addOn"
+                  value="inWall"
+                  checked={data.addOn === "inWall"}
+                  onChange={(e) => update({ addOn: e.target.value })}
+                  className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600"
                 />
-                External cord masking (I have my own parts)
+                In-wall cord concealment
               </label>
 
               <label className="flex items-center gap-x-2 text-base text-gray-900 dark:text-gray-100">
                 <input
-                  type="checkbox"
-                  name="externalTechCordMasking"
-                  checked={!!data.externalTechCordMasking}
-                  onChange={(e) =>
-                    update({ externalTechCordMasking: e.target.checked })
-                  }
-                  className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600"
+                  type="radio"
+                  name="addOn"
+                  value="externalMasking"
+                  checked={data.addOn === "externalMasking"}
+                  onChange={(e) => update({ addOn: e.target.value })}
+                  className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600"
                 />
-                External cord masking (Tech provides parts)
+                External cord concealment
               </label>
             </div>
           </fieldset>
@@ -302,12 +299,14 @@ export default function ContactInfo() {
               external walls.
             </li>
             <li>
-              We do not pre-loop walls for wire concealment, but we’re happy to
-              refer you to a licensed electrician.
+              Power must be within the area in order to be installed properly.
             </li>
             <li>
-              Customers must supply any HDMI cables prior to the technician’s
-              arrival.
+              TV power cords and HDMI cables must be long enough to reach power
+            </li>
+            <li>
+              Customers may need to handle small drywall or paint touch-ups if
+              fire blocks are present during in-wall cord concealment.
             </li>
             <li>
               We do not service specialized mounts (motorized, pillar, ceiling,
@@ -320,12 +319,13 @@ export default function ContactInfo() {
             <li>
               The bottom of the TV must not be more than 8 feet from the ground.
             </li>
+            <li>Please provide a clear work area before technician arrival.</li>
             <li>
-              This service does <strong>not</strong> include trash haul away.
+              If in-wall concealment is not possible, external cord concealment
+              options will be offered
             </li>
             <li>
-              At least one wall stud must be available if toggle bolts are used
-              in place of another stud.
+              This service does <strong>not</strong> include trash haul away.
             </li>
           </ul>
         </section>

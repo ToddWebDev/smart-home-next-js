@@ -13,9 +13,7 @@ export type QuoteFormData = {
   wallType?: string;
   needMount?: string;
   liftHelp?: string;
-  inWallCordMasking?: boolean;
-  externalCustomerCordMasking?: boolean;
-  externalTechCordMasking?: boolean;
+  addOn?: "" | "inWall" | "externalMasking";
 };
 
 const FormContext = createContext<{

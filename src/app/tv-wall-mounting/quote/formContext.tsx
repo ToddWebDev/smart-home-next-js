@@ -13,7 +13,7 @@ export type QuoteFormData = {
   wallType?: string;
   needMount?: string;
   liftHelp?: string;
-  addOn?: "" | "inWall" | "externalMasking";
+  addOn?: "" | "inWall" | "externalMasking | string";
 };
 
 const FormContext = createContext<{

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { useQuoteForm } from "../formContext";
+import { useQuoteForm, QuoteFormData } from "../formContext";
 import { Select } from "flowbite-react";
 import StepIndicator from "@/components/StepIndicator";
 
@@ -205,8 +205,10 @@ export default function ContactInfo() {
                   type="radio"
                   name="addOn"
                   value=""
-                  checked={data.addOn === ""}
-                  onChange={(e) => update({ addOn: e.target.value })}
+                  checked={data.addOn === ("" as QuoteFormData["addOn"])}
+                  onChange={(e) =>
+                    update({ addOn: e.target.value as QuoteFormData["addOn"] })
+                  }
                   className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:focus:ring-blue-600"
                 />
                 None
@@ -217,8 +219,10 @@ export default function ContactInfo() {
                   type="radio"
                   name="addOn"
                   value="inWall"
-                  checked={data.addOn === "inWall"}
-                  onChange={(e) => update({ addOn: e.target.value })}
+                  checked={data.addOn === ("inWall" as QuoteFormData["addOn"])}
+                  onChange={(e) =>
+                    update({ addOn: e.target.value as QuoteFormData["addOn"] })
+                  }
                   className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600"
                 />
                 In-wall cord concealment
@@ -229,8 +233,12 @@ export default function ContactInfo() {
                   type="radio"
                   name="addOn"
                   value="externalMasking"
-                  checked={data.addOn === "externalMasking"}
-                  onChange={(e) => update({ addOn: e.target.value })}
+                  checked={
+                    data.addOn === ("externalMasking" as QuoteFormData["addOn"])
+                  }
+                  onChange={(e) =>
+                    update({ addOn: e.target.value as QuoteFormData["addOn"] })
+                  }
                   className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600"
                 />
                 External cord concealment

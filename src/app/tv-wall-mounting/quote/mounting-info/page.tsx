@@ -131,13 +131,10 @@ export default function ContactInfo() {
                 <option value="flat">Flat</option>
                 <option value="tilting">Tilted</option>
                 <option value="full-motion">Full Motion</option>
-                <option value="flush">Flush mount</option>
               </Select>
 
               {typeof data.needMount === "string" &&
-                ["flat", "tilting", "full-motion", "flush"].includes(
-                  data.needMount,
-                ) && (
+                ["flat", "tilting", "full-motion"].includes(data.needMount) && (
                   <div
                     className="mt-4 mb-4 flex items-center rounded-lg bg-blue-50 p-4 text-sm text-blue-800 dark:bg-gray-800 dark:text-blue-400"
                     role="alert"
@@ -171,12 +168,6 @@ export default function ContactInfo() {
                           Full motion mounts give maximum flexibility to extend,
                           swivel, and tilt the TV in almost any direction for
                           the perfect view.
-                        </>
-                      )}
-                      {data.needMount === "flush" && (
-                        <>
-                          Flush mounts are slim and sit tight against the wall
-                          for art-style displays.
                         </>
                       )}
                     </div>
@@ -239,7 +230,7 @@ export default function ContactInfo() {
                 <div className="flex flex-col">
                   <span>External cord concealment</span>
                   <span className="text-sm text-gray-600 dark:text-gray-400">
-                    Hides visible cords with a wall-mounted track.
+                    Hides visible cords with a wall-mounted track
                   </span>
                 </div>
               </label>
@@ -258,7 +249,7 @@ export default function ContactInfo() {
                 <div className="flex flex-col">
                   <span>In-wall cord concealment</span>
                   <span className="text-sm text-gray-600 dark:text-gray-400">
-                    Hides cords inside the wall for a clean, cable-free look.
+                    Hides cords inside the wall for a clean, cable-free look
                   </span>
                 </div>
               </label>
@@ -322,8 +313,8 @@ export default function ContactInfo() {
           </h2>
           <ul className="list-disc space-y-2 pl-5 text-gray-600 dark:text-gray-400">
             <li>
-              We do not mount on plaster, tile, stone, multi-layered facades, or
-              external walls.
+              We do <strong>not</strong> mount on plaster, tile, stone,
+              multi-layered facades, or external walls.
             </li>
             <li>
               Power must be within the area in order to be installed properly.
@@ -337,20 +328,21 @@ export default function ContactInfo() {
               fire blocks are present during in-wall cord concealment.
             </li>
             <li>
-              We do not service specialized mounts (motorized, pillar, ceiling,
-              corner, or drop-down).
+              We do <strong>not</strong> service specialized mounts (motorized,
+              pillar, ceiling, corner, or drop-down).
             </li>
             <li>
-              We do not install mounts on single studs, surfaces without studs,
-              or any exterior surfaces.
+              We do <strong>not</strong> install mounts on single studs,
+              surfaces without studs, or any exterior surfaces.
             </li>
             <li>
-              The bottom of the TV must not be more than 8 feet from the ground.
+              The bottom of the TV must <strong>not</strong> be more than 8 feet
+              from the ground.
             </li>
             <li>Please provide a clear work area before technician arrival.</li>
             <li>
-              If in-wall concealment is not possible, external cord concealment
-              options will be offered
+              If in-wall concealment is <strong>not</strong> possible, external
+              cord concealment options will be offered
             </li>
             <li>
               This service does <strong>not</strong> include trash haul away.

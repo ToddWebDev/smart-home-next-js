@@ -131,10 +131,13 @@ export default function ContactInfo() {
                 <option value="flat">Flat</option>
                 <option value="tilting">Tilted</option>
                 <option value="full-motion">Full Motion</option>
+                <option value="flush">Flush mount</option>
               </Select>
 
               {typeof data.needMount === "string" &&
-                ["flat", "tilting", "full-motion"].includes(data.needMount) && (
+                ["flat", "tilting", "full-motion", "flush"].includes(
+                  data.needMount,
+                ) && (
                   <div
                     className="mt-4 mb-4 flex items-center rounded-lg bg-blue-50 p-4 text-sm text-blue-800 dark:bg-gray-800 dark:text-blue-400"
                     role="alert"
@@ -168,6 +171,12 @@ export default function ContactInfo() {
                           Full motion mounts give maximum flexibility to extend,
                           swivel, and tilt the TV in almost any direction for
                           the perfect view.
+                        </>
+                      )}
+                      {data.needMount === "flush" && (
+                        <>
+                          Flush mounts are slim and sit tight against the wall
+                          for art-style displays.
                         </>
                       )}
                     </div>
@@ -218,20 +227,6 @@ export default function ContactInfo() {
                 <input
                   type="radio"
                   name="addOn"
-                  value="inWall"
-                  checked={data.addOn === ("inWall" as QuoteFormData["addOn"])}
-                  onChange={(e) =>
-                    update({ addOn: e.target.value as QuoteFormData["addOn"] })
-                  }
-                  className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600"
-                />
-                In-wall cord concealment
-              </label>
-
-              <label className="flex items-center gap-x-2 text-base text-gray-900 dark:text-gray-100">
-                <input
-                  type="radio"
-                  name="addOn"
                   value="externalMasking"
                   checked={
                     data.addOn === ("externalMasking" as QuoteFormData["addOn"])
@@ -241,7 +236,31 @@ export default function ContactInfo() {
                   }
                   className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600"
                 />
-                External cord concealment
+                <div className="flex flex-col">
+                  <span>External cord concealment</span>
+                  <span className="text-sm text-gray-600 dark:text-gray-400">
+                    Hides visible cords with a wall-mounted track.
+                  </span>
+                </div>
+              </label>
+
+              <label className="flex items-center gap-x-2 text-base text-gray-900 dark:text-gray-100">
+                <input
+                  type="radio"
+                  name="addOn"
+                  value="inWall"
+                  checked={data.addOn === ("inWall" as QuoteFormData["addOn"])}
+                  onChange={(e) =>
+                    update({ addOn: e.target.value as QuoteFormData["addOn"] })
+                  }
+                  className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600"
+                />
+                <div className="flex flex-col">
+                  <span>In-wall cord concealment</span>
+                  <span className="text-sm text-gray-600 dark:text-gray-400">
+                    Hides cords inside the wall for a clean, cable-free look.
+                  </span>
+                </div>
               </label>
             </div>
           </fieldset>
@@ -311,6 +330,7 @@ export default function ContactInfo() {
             </li>
             <li>
               TV power cords and HDMI cables must be long enough to reach power
+              (longer replacement cables available if needed).
             </li>
             <li>
               Customers may need to handle small drywall or paint touch-ups if
